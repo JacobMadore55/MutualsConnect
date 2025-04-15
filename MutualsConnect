@@ -1,0 +1,70 @@
+export default function App() {
+  return (
+    <div className="min-h-screen bg-white text-gray-900">
+      <header className="border-b p-6 shadow-sm">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          <h1 className="text-2xl font-bold text-[#0A66C2]">MutualsConnect</h1>
+          <nav className="space-x-6">
+            <a href="#features" className="hover:underline">Features</a>
+            <a href="#how" className="hover:underline">How it Works</a>
+            <a href="#get-started" className="hover:underline">Get Started</a>
+          </nav>
+        </div>
+      </header>
+
+      <main className="py-16 px-6 bg-gray-50">
+        <section className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-4">Smarter LinkedIn Networking Starts Here</h2>
+          <p className="text-lg text-gray-600 mb-8">
+            Let AI analyze your profile and recommend high-value connections – with personalized messages.
+          </p>
+          <a href="#get-started" className="inline-block bg-[#0A66C2] text-white px-6 py-3 rounded-xl text-lg hover:bg-blue-700">
+            Try It Free
+          </a>
+        </section>
+
+        <section id="features" className="max-w-5xl mx-auto mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-white shadow-md p-6 rounded-2xl">
+            <h3 className="text-xl font-semibold mb-2">🔍 Analyze Your Profile</h3>
+            <p className="text-gray-600">AI reads your background to match you with relevant professionals.</p>
+          </div>
+          <div className="bg-white shadow-md p-6 rounded-2xl">
+            <h3 className="text-xl font-semibold mb-2">🤝 Smart Suggestions</h3>
+            <p className="text-gray-600">We surface mutuals, hiring managers, and collaborators who matter.</p>
+          </div>
+          <div className="bg-white shadow-md p-6 rounded-2xl">
+            <h3 className="text-xl font-semibold mb-2">💬 AI-Generated Intros</h3>
+            <p className="text-gray-600">Personalized messages that get replies – no more cold DMs.</p>
+          </div>
+        </section>
+
+        <section id="how" className="max-w-4xl mx-auto mt-24 text-center">
+          <h2 className="text-3xl font-bold mb-6">How It Works</h2>
+          <ol className="space-y-4 text-left text-lg max-w-xl mx-auto">
+            <li><strong>1.</strong> Paste your LinkedIn profile URL</li>
+            <li><strong>2.</strong> Tell us your goals or target industry</li>
+            <li><strong>3.</strong> AI finds relevant people + drafts intros</li>
+            <li><strong>4.</strong> You connect smarter – in seconds</li>
+          </ol>
+        </section>
+
+        <section id="get-started" className="max-w-4xl mx-auto mt-24 text-center">
+          <h2 className="text-3xl font-bold mb-4">Start Connecting Smarter</h2>
+          <p className="text-gray-600 mb-6">No downloads. No credit card. Just better networking.</p>
+          <input
+            type="text"
+            placeholder="Paste your LinkedIn URL"
+            className="w-full max-w-md mx-auto mb-4 px-4 py-2 border border-gray-300 rounded-xl"
+          />
+          <button className="bg-[#0A66C2] text-white px-6 py-3 rounded-xl hover:bg-blue-700">
+            Analyze My Network
+          </button>
+        </section>
+      </main>
+
+      <footer className="text-center p-6 text-sm text-gray-500 border-t mt-24">
+        © {new Date().getFullYear()} MutualsConnect. All rights reserved.
+      </footer>
+    </div>
+  );
+}
